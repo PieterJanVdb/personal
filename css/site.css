@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Raleway|Lato|Droid+Sans);
+
+body {
+    font-family: "Droid Sans", sans-serif;
+    color: #373636;
+}
+
+.container {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.name h1 {
+    font-size: 3em;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 6px;
+    margin: 0 0 5px 0;
+    position: relative;
+    max-width: 411px;
+}
+
+.name h1:after {
+    content: '';
+    width: 321px;
+    height: 4px;
+    background: #373636;
+    position: absolute;
+    bottom: -16px;
+    left: 85px;
+}
+
+.icons-line-container {
+    display:flex;
+}
+
+.icons {
+    min-width: 10%;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #373636;
+}
+
+.profile-picture {
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(../img/profile2.jpg) no-repeat;
+    margin-right: 25px;
+    margin-top: 12px;
+}
+
+/* ABOUT */
+
+.about-container {
+    margin-top: 50px;
+}
+
+.about-header {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.about {
+    margin-top: 80px;
+    text-align: center;
+    line-height: 170%;
+}
+
+/* PROJECTS */
+
+.projects-container {
+    margin-top: 30px;
+}
+
+.projects-header {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;;
+}
+
+.projects {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 170%;
+}
+
+.projects a {
+    color: #0077CC;
+    text-decoration: none;
+}
+
+/* CV */
+.cv-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.2em;;
+}
+
+.cv-header a {
+    color: #0077CC;
+    text-decoration: none;
+}
+
+/* CV */
+.stage-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.2em;;
+}
+
+.stage-header a {
+    color: #0077CC;
+    text-decoration: none;
+}
+
+
+/* MEDIA QUERIES */
+
+/*@media (min-width: 1149px) {
+    .name h1:after {
+        content: '';
+        width: 597px;
+        height: 4px;
+        background: #373636;
+        position: absolute;
+        bottom: -16px;
+        left: 85px;
+    }
+
+    .profile-picture {
+        min-width: 150px;
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+        -webkit-border-radius: 150px;
+        -moz-border-radius: 150px;
+        background: url(../img/profile2.jpg) no-repeat;
+        margin-right: 25px;
+        margin-top: -12px;
+    }
+}
+*/
+
+@media (max-width: 650px) {
+    .profile-picture {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .name h1 {
+        font-size: 2em;
+        max-width: 295px;
+    }
+
+    .name h1:after {
+        content: '';
+        width: 210px;
+        height: 4px;
+        background: #373636;
+        position: absolute;
+        bottom: -16px;
+        left: 85px;
+    }
+}
